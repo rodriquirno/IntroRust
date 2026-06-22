@@ -1,2 +1,2 @@
-# introRust
+# IntroRust
 Self-learning Rust 
