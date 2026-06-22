@@ -1,0 +1,11 @@
+# Rust / Cargo build output (applies to every crate in this repo)
+target/
+
+# Backtrace / debug artifacts
+*.pdb
+
+# Editor / OS cruft
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
