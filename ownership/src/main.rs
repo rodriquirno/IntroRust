@@ -4,8 +4,7 @@ fn main() {
     // There can only be one owner at a time.
     // When the owner goes out of scope, the value will be dropped.
 
-
-    // ── Memory and Allocation ────────────────────────────────────────────────
+    // ── Memory and Allocation ──────────────────────────────────────────
     {   // stack-only data: Copy 
         let x = 5;        // stack-allocated integer
         let y = x;        // x is COPIED into y; both valid (i32 is Copy)
@@ -178,7 +177,7 @@ fn main() {
         fn dangle() -> &String {    // dangle returns a reference to a String
             let s = String::from("hello");     // s is a new String
             &s     // we return a reference to the String, s
-        } // Here, s goes out of scope and is dropped, so its memory goes away.
+        } // Here, s goes out of scope and dropped, so its memory goes away.
       // Danger! this reference would be pointing to an invalid String.
       // Rust won’t let us do this.
     }
